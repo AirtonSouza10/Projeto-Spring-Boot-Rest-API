@@ -21,20 +21,14 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.springboot.cursojdev.model.Usuario;
 import br.com.springboot.cursojdev.repository.UsuarioRepository;
 
-/**
- *
- * A sample greetings controller to return greeting text
- */
+
 @RestController
 public class GreetingsController {
 	
 	@Autowired //IC-CD-CDI - injeção de dependencia
 	private UsuarioRepository usuarioRepository;
-    /**
-     *
-     * @param name the name to greet
-     * @return greeting text
-     */
+
+	
     @RequestMapping(value = "/mostrarnome/{name}", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     public String greetingText(@PathVariable String name) {
