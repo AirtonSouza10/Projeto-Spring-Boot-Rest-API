@@ -25,7 +25,7 @@ import br.com.springboot.cursojdev.repository.UsuarioRepository;
 @RestController
 public class GreetingsController {
 	
-	@Autowired //IC-CD-CDI - injeção de dependencia
+	@Autowired //IC-CD-CDI - Injeção de dependência autowired
 	private UsuarioRepository usuarioRepository;
 
 	
